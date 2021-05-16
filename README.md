@@ -1,2 +1,2 @@
-# anotacoes_sql
-Anotações de SQL
+# Anotações de SQL
+Algumas anotações durante meu aprendizado de SQL.
