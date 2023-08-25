@@ -63,3 +63,35 @@ FULL JOIN
   `cobalt-nomad-322417.banco_teste.compras` c
 ON
   a.user_id = c.user_id
+
+-- CROSS JOIN
+
+-- O Cross Join combina todas as linhas de uma tabela com todas as linhas de outra tabela. Em outras palavras, ele cria todas as combinações possíveis
+-- de linhas entre as tabelas envolvidas, resultando em um conjunto de resultados muito grande, a menos que as tabelas sejam pequenas.
+
+
+-- Tabela A
+-- +----+-------+
+-- | ID | Nome  |
+-- +----+-------+
+-- | 1  | Alice |
+-- | 2  | Bob   |
+-- +----+-------+
+
+-- Tabela B
+-- +-----+---------+
+-- | ID  | Produto |
+-- +-----+---------+
+-- | 101 | Maçã    |
+-- | 102 | Banana  |
+-- +-----+---------+
+
+-- Resultado do CROSS JOIN
+-- +----+-------+-----+---------+
+-- | ID | Nome  | ID  | Produto |
+-- +----+-------+-----+---------+
+-- | 1  | Alice | 101 | Maçã    |
+-- | 1  | Alice | 102 | Banana  |
+-- | 2  | Bob   | 101 | Maçã    |
+-- | 2  | Bob   | 102 | Banana  |
+-- +----+-------+-----+---------+
